@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    margin:20px 0;
+    background:#eee;
+    
+}
+
+article{
+    width:21cm;
+    min-height:29.7cm;
+    background:white;
+    margin:0 auto;
+    overflow:auto;
+    padding:1em;
+}
+h1{
+    margin-top: 20px;
+    font-size: 30px;
+}
+h1 + p{
+    margin-top: 10px;
+}
+
+.pcBase > span{
+    display: inline-block;
+    margin-right:20px;
+}
+
+.projects,.undergo,.experience,.introduce{
+    display: block;
+    margin-bottom:15px;
+}
+ article > div > p{
+    line-height: 30px;
+    margin-left:25px;
+}
+
+.projects > ol > li {
+    margin-left:40px;
+    line-height: 30px;
+}
+
+.projects >div> ol,.undergo>ol,.experience > div>ol{
+    list-style:none;
+}
+
+.experience > ol{
+    list-style-position:inside;
+    padding:0;
+    margin-bottom:24px;
+}
+
+h2{
+    margin:30px 0 10px;
+}
+
+.experience > div{
+    margin-left:26px;
+}
+
+.experience h3{
+    display: inline-block;
+    margin:10px 0 15px;
+}
+
+.experience > div > header > span{
+    display: inline-block;
+    margin: 0 0 10px 21px;
+}
+
+.experience > div > ol > li{
+    margin-bottom:10px;
+}
+
+.experience > div > ol > li > p{
+    margin:5px 0 5px 21px;
+}
+.undergo{
+    page-break-before: always;
+}
+.undergo>ol,.introduce > .text{
+    margin-left:30px
+}
+.undergo h3,.undergo h4{
+    display: inline-block;
+}
+.undergo h4{
+    margin:0 15px;
+}
+.undergo p{
+    margin:8px 0 6px;
+}
+.undergo>header{
+    margin-left:30px;
+}
+.undergo>header>ol{
+    margin-left:36px;
+}
+.introduce .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.introduce .wrapper > :first-child{
+    margin-right: 20px;
+}
+.introduce .wrapper > #skills{
+    width: 370px;
+    height:259px;
+}
+.introduce .wrapper > ol{
+    flex:1;
+}
+.introduce .wrapper > ol>li,.introduce,.text > ol>li{
+    margin-bottom:10px;
+}
+.introduce,.text {
+    margin-top: 8px;
+}
+.introduce,.text > ol,li > p{
+    line-height: 1.6;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    
+}
+
+.printPage{
+	margin-top: 30px;
+	page-break-before: always;
+}
+
+
+
+
+/*移动端简单适配*/
+@media (max-width:500px){
+    body{
+        margin: 0;
+    }
+    article{
+        width:auto;
+        height:auto;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .wrapper > #skills{
+        width: 400px !important;
+    }
+    .mobileSkill{
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    article > div > p{
+        margin-left: 5px;
+    }
+    article > div > p > span{
+        display: block;
+    }
+    section header,.undergo p,section h4,.experience > div{
+        margin:3px 0 !important;
+    }
+    .undergo h4,section time{
+        display: block;
+    }
+
+}
+@media (max-width:420px){
+    .wrapper > #skills{
+        width: 350px !important;
+    }
+}
+@media (max-width:380px){
+    .wrapper > #skills{
+        width: 340px !important;
+    }
+}
+
